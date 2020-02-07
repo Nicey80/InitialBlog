@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on DataWorks UK</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on DataWorks UK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tidy Tuesday Spotify data</title>
+      <link>/posts/tt-spotify/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tt-spotify/</guid>
+      <description>This weeks Tidy Tuesday challenge centred around Spotify data, over 32,000 songs from multiple genres from the 60s to today. Given this was my first Tidy Tuesday for a while I decided to go for something relatively quick and simple to try to get back into the habit and look at the popularity of different types of music over time.
+  Code Having read in the data the next step was to make a quick modification to allow me to work with dates as opposed to character values.</description>
+    </item>
+    
+  </channel>
+</rss>
