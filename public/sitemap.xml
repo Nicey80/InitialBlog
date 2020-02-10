@@ -3,28 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-    <lastmod>2020-01-25T21:22:27+00:00</lastmod>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/dataviz/</loc>
-    <lastmod>2020-01-25T21:22:27+00:00</lastmod>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/dataviz/</loc>
-    <lastmod>2020-01-25T21:22:27+00:00</lastmod>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-01-25T21:22:27+00:00</lastmod>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/nfl/</loc>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/tidy-tuesday-nfl-data/</loc>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tidyverse/</loc>
+    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2020-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,17 +63,7 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-01-25T21:22:27+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/tt-spotify/</loc>
-    <lastmod>2020-01-25T21:22:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/tidyverse/</loc>
     <lastmod>2020-01-25T21:22:27+00:00</lastmod>
   </url>
   
