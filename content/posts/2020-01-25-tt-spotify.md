@@ -9,6 +9,7 @@ lastmod: '2020-01-25T21:22:27Z'
 layout: post
 type: post
 highlight: no
+image: "/img/Spotify.png"
 ---
 
 This weeks Tidy Tuesday challenge centred around Spotify data, over 32,000 songs from multiple genres from the 60s to today. Given this was my first Tidy Tuesday for a while I decided to go for something relatively quick and simple to try to get back into the habit and look at the popularity of different types of music over time.
