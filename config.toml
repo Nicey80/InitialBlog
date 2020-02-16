@@ -2,7 +2,7 @@
 baseurl = "/"
 languageCode = "en"
 
-title = "DataWorks UK"
+title = "DataSorcery"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
@@ -17,7 +17,7 @@ theme = "hyde-hyde"
 ## Site Settings
 [params]
     author = "Paul Nice"
-    title = "DataWorks UK"
+    title = "DataSorcery"
     # description = "..."
     authorimage = "/img/pn.jpg"
     dateformat = "Jan 2, 2006"

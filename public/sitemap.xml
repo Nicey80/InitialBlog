@@ -3,13 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+    <loc>/tags/apps/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/dataviz/</loc>
-    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
+    <loc>/categories/apps/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nlp/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/nlp/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/nlp-next-word-prediction/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tidytext/</loc>
+    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
   </url>
   
   <url>
@@ -18,7 +58,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/categories/dataviz/</loc>
     <lastmod>2020-02-10T21:03:01+00:00</lastmod>
   </url>
   
@@ -34,11 +74,6 @@
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-02-10T21:03:01+00:00</lastmod>
   </url>
   
@@ -64,11 +99,6 @@
   
   <url>
     <loc>/portfolio/hyde-hyde/</loc>
-    <lastmod>2018-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/portfolio/</loc>
     <lastmod>2018-01-27T00:00:00+00:00</lastmod>
   </url>
   
