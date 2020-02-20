@@ -20,7 +20,7 @@
       <description>NLP Predict the next word.
 As the final part of the Coursera R Programming Course I had to build an App that would predict the next word as a user started to type in words so that after min. 3 words the next word is predicted. Similar to the function of some smartphones.
 The app can be found here: https://nicey80.shinyapps.io/NLP_App_v2/
-  The App The App was created primarily using the tidytext package to ingest the corpus data (tweets, blogs and news articles) and create the relevant ngram models and then using dplyr &amp;amp; data.</description>
+The App The App was created primarily using the tidytext package to ingest the corpus data (tweets, blogs and news articles) and create the relevant ngram models and then using dplyr &amp;amp; data.</description>
     </item>
     
     <item>

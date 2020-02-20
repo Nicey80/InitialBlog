@@ -1,14 +1,15 @@
 ---
 title: NLP Next Word Prediction
-author: ~
+description: "NLP Using tidytext to predict the next word in a sentence"
 date: '2020-02-16'
+link: "https://nicey80.shinyapps.io/NLP_App_v2/"
+screenshot: 'NLP.png'
+layout: portfolio
+featured: true
 slug: nlp-next-word-prediction
 categories: [NLP, Apps]
 tags: [NLP, tidytext, Apps]
 lastmod: '2020-02-16T20:24:09Z'
-layout: post
-type: post
-highlight: no
 image: "/img/NLP.png"
 ---
 
@@ -18,9 +19,6 @@ As the final part of the Coursera R Programming Course I had to build an App tha
 
 The app can be found here:
 https://nicey80.shinyapps.io/NLP_App_v2/
-
-{{<figure src="/img/NLP.png">}}
-
 
 ## The App
 
