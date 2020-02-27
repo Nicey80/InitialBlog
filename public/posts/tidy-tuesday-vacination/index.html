@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.62.2" />
+
+    
+    
+    
+
+<title>Tidy Tuesday Vacination • DataSorcery</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tidy Tuesday Vacination"/>
+<meta name="twitter:description" content="This weeks Tidy Tuesday gave an opportunity to explore some mapping and a good excuse to look at the patchwork framework to multiplotting. I chose to explore the data from California as a good exercise in creating a chloropleth map using ggplot and the sf package. The latter was extremely useful having spent a significant amnount of time trying to join the data together but by converting the sp data to an sf data frame the flatter structure made joining the data and the subsequent plotting much easier."/>
+
+<meta property="og:title" content="Tidy Tuesday Vacination" />
+<meta property="og:description" content="This weeks Tidy Tuesday gave an opportunity to explore some mapping and a good excuse to look at the patchwork framework to multiplotting. I chose to explore the data from California as a good exercise in creating a chloropleth map using ggplot and the sf package. The latter was extremely useful having spent a significant amnount of time trying to join the data together but by converting the sp data to an sf data frame the flatter structure made joining the data and the subsequent plotting much easier." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/tidy-tuesday-vacination/" />
+<meta property="article:published_time" content="2020-02-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-27T20:41:42+00:00" /><meta property="og:site_name" content="DataSorcery" />
+
+
+    
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.49e589f3cb3416ae081c54b359805f05b7a9e984ef50c0a52105f8b007367452.css" integrity="sha256-SeWJ88s0Fq4IHFSzWYBfBbep6YTvUMClIQX4sAc2dFI=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="/">DataSorcery</a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="/img/pn.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">DataSorcery</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>About</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/nicey1980" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/%3cusername%3e" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/paulnice" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	<a href="https://stackoverflow.com/users/%3cusername%3e" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:nicey80@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2020 htr3n
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Tidy Tuesday Vacination</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Feb 27, 2020
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/ggplot">GGPLOT</a>
+              •
+          
+              <a class="badge badge-category" href="/categories/maps">MAPS</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/ggplot">ggplot</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/maps">maps</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 2 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>This weeks Tidy Tuesday gave an opportunity to explore some mapping and a good excuse to look at the patchwork framework to multiplotting. I chose to explore the data from California as a good exercise in creating a chloropleth map using ggplot and the sf package. The latter was extremely useful having spent a significant amnount of time trying to join the data together but by converting the sp data to an sf data frame the flatter structure made joining the data and the subsequent plotting much easier.</p>
+<p>This key step was as simple as <em>st_as_sf</em></p>
+<figure>
+    <img src="/img/MMR_Vac_Cali.png"/> 
+</figure>
+
+<h2 id="code">Code</h2>
+<p>Plotting code as follows</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#75715e">#plot of state</span>
+p1 <span style="color:#f92672">&lt;-</span> me2 <span style="color:#f92672">%&gt;%</span>
+    <span style="color:#a6e22e">filter</span>(vac_pct<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span>, <span style="color:#f92672">!</span><span style="color:#a6e22e">is.na</span>(vac_pct)) <span style="color:#f92672">%&gt;%</span> 
+    <span style="color:#a6e22e">ggplot</span>()<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(<span style="color:#a6e22e">aes</span>(fill<span style="color:#f92672">=</span>vac_pct))<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_point</span>(data<span style="color:#f92672">=</span>meas_cal, <span style="color:#a6e22e">aes</span>(lng,lat), colour<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">red&#39;</span>)<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">scale_fill_continuous</span>() <span style="color:#f92672">+</span>
+    <span style="color:#75715e">#ggtitle(&#34;MMR Vacination Rates in California Counties&#34;, subtitle = &#34;Plus facilites &lt;50% coverage&#34;) +</span>
+    <span style="color:#a6e22e">theme_map</span>()<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">labs</span>(var_pct<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Vacination \npercent&#34;</span>)<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">theme</span>(legend.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>), legend.text <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>))
+    
+p2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">ggmap</span>(ph_basemap)<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_sf</span>(data<span style="color:#f92672">=</span>me_mend, fill<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">darkblue&#34;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, inherit.aes<span style="color:#f92672">=</span><span style="color:#66d9ef">FALSE</span>)<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">geom_point</span>(data<span style="color:#f92672">=</span>meas_mendo, <span style="color:#a6e22e">aes</span>(lng,lat, size<span style="color:#f92672">=</span>non_vac_rate))<span style="color:#f92672">+</span>
+    <span style="color:#a6e22e">theme</span>(axis.ticks <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(), axis.text <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(),
+          axis.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_blank</span>(), legend.title <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>),
+          legend.text <span style="color:#f92672">=</span> <span style="color:#a6e22e">element_text</span>(size<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>))<span style="color:#f92672">+</span>
+    <span style="color:#75715e">#ggtitle(&#34;Mendocino County&#34;, subtitle = &#34;Non Vacination Hotspots&#34;, caption=&#34;Mendocino County Hotspots&#34;)+</span>
+    <span style="color:#a6e22e">labs</span>(size<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Non Vacination \nRate&#34;</span>, caption <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Mendocino County Hotspots&#34;</span>)
+<span style="color:#a6e22e">p2
+</span><span style="color:#a6e22e">
+</span><span style="color:#a6e22e"></span>(p1 <span style="color:#f92672">|</span>(p2<span style="color:#f92672">/</span><span style="color:#a6e22e">plot_spacer</span>())) <span style="color:#f92672">+</span> <span style="color:#a6e22e">plot_layout</span>(guides <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">collect&#39;</span>, widths <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">+</span> <span style="color:#a6e22e">plot_annotation</span>(
+    title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">MMR Vacination Rates in California Counties&#39;</span>,
+    subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Highlighting facilities with &lt;50% vacination rates&#39;</span>,
+    caption <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Pullout: Mendocino County&#39;</span>
+)
+
+</code></pre></div><p>Find the full code on Github here:
+<a href="https://github.com/Nicey80/tidytuesday/blob/master/2020-02-25/2020-02-25.R">https://github.com/Nicey80/tidytuesday/blob/master/2020-02-25/2020-02-25.R</a></p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/tidy-tuesday-nfl-data/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Tidy Tuesday NFL data</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>

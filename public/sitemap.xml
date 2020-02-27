@@ -3,22 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ggplot/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ggplot/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/maps/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/maps/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tidy-tuesday-vacination/</loc>
+    <lastmod>2020-02-27T20:41:42+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/apps/</loc>
     <lastmod>2020-02-16T20:24:09+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/apps/</loc>
-    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-02-16T20:24:09+00:00</lastmod>
   </url>
   
@@ -43,11 +78,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-02-16T20:24:09+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/tidytext/</loc>
     <lastmod>2020-02-16T20:24:09+00:00</lastmod>
   </url>
@@ -64,11 +94,6 @@
   
   <url>
     <loc>/categories/nfl/</loc>
-    <lastmod>2020-02-10T21:03:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/</loc>
     <lastmod>2020-02-10T21:03:01+00:00</lastmod>
   </url>
   

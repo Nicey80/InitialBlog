@@ -6,10 +6,19 @@
     <description>Recent content in Posts on DataSorcery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tidy Tuesday Vacination</title>
+      <link>/posts/tidy-tuesday-vacination/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/tidy-tuesday-vacination/</guid>
+      <description>This weeks Tidy Tuesday gave an opportunity to explore some mapping and a good excuse to look at the patchwork framework to multiplotting. I chose to explore the data from California as a good exercise in creating a chloropleth map using ggplot and the sf package. The latter was extremely useful having spent a significant amnount of time trying to join the data together but by converting the sp data to an sf data frame the flatter structure made joining the data and the subsequent plotting much easier.</description>
+    </item>
     
     <item>
       <title>Tidy Tuesday NFL data</title>
