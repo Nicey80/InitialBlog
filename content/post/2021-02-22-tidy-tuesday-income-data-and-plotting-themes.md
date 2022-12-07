@@ -12,7 +12,7 @@ highlight: no
 image: "/img/income_equality.png"
 ---
 
-A while since I've completed a tidy tuesday challenge here so to get back in teh swing of things I've choen a fairly simple plot of income equality by race and focused on altering the default these to try to create a more striking visual effect for the data.
+A while since I've completed a tidy tuesday challenge here so to get back in the swing of things I've chosen a fairly simple plot of income equality by race and focused on altering the default these to try to create a more striking visual effect for the data.
 
 {{<figure src="/img/Spotify.png">}}
 
