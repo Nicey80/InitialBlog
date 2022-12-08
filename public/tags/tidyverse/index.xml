@@ -17,7 +17,7 @@
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/tt-income-data-and-plotting-themes/</guid>
-      <description>A while since I&#39;ve completed a tidy tuesday challenge here so to get back in teh swing of things I&#39;ve choen a fairly simple plot of income equality by race and focused on altering the default these to try to create a more striking visual effect for the data.
+      <description>A while since I&#39;ve completed a tidy tuesday challenge here so to get back in the swing of things I&#39;ve chosen a fairly simple plot of income equality by race and focused on altering the default these to try to create a more striking visual effect for the data.
   Code The code is pretty straight forward to create the chart. The key effect I was going for here was to alter the theme to make a more striking visual.</description>
     </item>
     

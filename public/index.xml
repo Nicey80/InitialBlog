@@ -6,10 +6,21 @@
     <description>Recent content on DataSorcery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Dec 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>findR - find places of interest in the UK</title>
+      <link>/portfolio/2022-12-07-findr/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/2022-12-07-findr/</guid>
+      <description>Whether its Chinese in Canterbury or Indian in Iwade - findR has them all
+Powered by Yelp Search I&#39;ve developed a quick app to allow people to quickly find businesses or places of interest in the UK of their choosing and allowing a filter by rating.
+App Details Hosted on my own Shiny Server instance with thanks to the excellent instructions from charlesbordet (https://www.charlesbordet.com/en/guide-shiny-aws/) the app uses the functions within the yelpr (https://github.</description>
+    </item>
     
     <item>
       <title>Tidy Tuesday Income Data and plotting themes</title>
@@ -17,7 +28,7 @@
       <pubDate>Mon, 22 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>/post/tt-income-data-and-plotting-themes/</guid>
-      <description>A while since I&#39;ve completed a tidy tuesday challenge here so to get back in teh swing of things I&#39;ve choen a fairly simple plot of income equality by race and focused on altering the default these to try to create a more striking visual effect for the data.
+      <description>A while since I&#39;ve completed a tidy tuesday challenge here so to get back in the swing of things I&#39;ve chosen a fairly simple plot of income equality by race and focused on altering the default these to try to create a more striking visual effect for the data.
   Code The code is pretty straight forward to create the chart. The key effect I was going for here was to alter the theme to make a more striking visual.</description>
     </item>
     

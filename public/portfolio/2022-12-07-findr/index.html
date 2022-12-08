@@ -17,19 +17,23 @@
     
     
 
-<title>NLP Next Word Prediction • DataSorcery</title>
+<title>findR - find places of interest in the UK • DataSorcery</title>
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="NLP Next Word Prediction"/>
-<meta name="twitter:description" content="NLP Using tidytext to predict the next word in a sentence"/>
+<meta name="twitter:title" content="findR - find places of interest in the UK"/>
+<meta name="twitter:description" content="Whether its Chinese in Canterbury or Indian in Iwade - findR has them all
+Powered by Yelp Search I&#39;ve developed a quick app to allow people to quickly find businesses or places of interest in the UK of their choosing and allowing a filter by rating.
+App Details Hosted on my own Shiny Server instance with thanks to the excellent instructions from charlesbordet (https://www.charlesbordet.com/en/guide-shiny-aws/) the app uses the functions within the yelpr (https://github."/>
 
-<meta property="og:title" content="NLP Next Word Prediction" />
-<meta property="og:description" content="NLP Using tidytext to predict the next word in a sentence" />
+<meta property="og:title" content="findR - find places of interest in the UK" />
+<meta property="og:description" content="Whether its Chinese in Canterbury or Indian in Iwade - findR has them all
+Powered by Yelp Search I&#39;ve developed a quick app to allow people to quickly find businesses or places of interest in the UK of their choosing and allowing a filter by rating.
+App Details Hosted on my own Shiny Server instance with thanks to the excellent instructions from charlesbordet (https://www.charlesbordet.com/en/guide-shiny-aws/) the app uses the functions within the yelpr (https://github." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/portfolio/nlp-next-word-prediction/" />
-<meta property="article:published_time" content="2020-02-16T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-02-16T20:24:09+00:00" /><meta property="og:site_name" content="DataSorcery" />
+<meta property="og:url" content="/portfolio/2022-12-07-findr/" />
+<meta property="article:published_time" content="2022-12-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-07T18:10:49+00:00" /><meta property="og:site_name" content="DataSorcery" />
 
 
     
@@ -175,13 +179,13 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
     
 <article>
   <header>
-    <h1>NLP Next Word Prediction</h1>
+    <h1>findR - find places of interest in the UK</h1>
     
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Feb 16, 2020
+      <i class="fas fa-calendar-alt"></i> Dec 7, 2022
     
     
     
@@ -193,7 +197,10 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
               <a class="badge badge-category" href="/categories/apps">APPS</a>
               •
           
-              <a class="badge badge-category" href="/categories/nlp">NLP</a>
+              <a class="badge badge-category" href="/categories/mapping">MAPPING</a>
+              •
+          
+              <a class="badge badge-category" href="/categories/search">SEARCH</a>
               
           
       
@@ -205,13 +212,13 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
           <br/>
            <i class="fas fa-tags"></i>
           
-          <a class="badge badge-tag" href="/tags/nlp">nlp</a>
+          <a class="badge badge-tag" href="/tags/dev">dev</a>
            
       
-          <a class="badge badge-tag" href="/tags/tidytext">tidytext</a>
+          <a class="badge badge-tag" href="/tags/hugo">hugo</a>
            
       
-          <a class="badge badge-tag" href="/tags/apps">apps</a>
+          <a class="badge badge-tag" href="/tags/hyde-hyde">hyde-hyde</a>
           
       
     
@@ -225,33 +232,22 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
   
   
   <div class="post">
-    <p><strong>NLP Predict the next word.</strong></p>
-<p>As the final part of the Coursera R Programming Course I had to build an App that would predict the next word as a user started to type in words so that after min. 3 words the next word is predicted. Similar to the function of some smartphones.</p>
-<p>The app can be found here:
-<a href="https://nicey80.shinyapps.io/NLP_App_v2/">https://nicey80.shinyapps.io/NLP_App_v2/</a></p>
-<h2 id="the-app">The App</h2>
-<p>The App was created primarily using the tidytext package to ingest the corpus data (tweets, blogs and news articles) and create the relevant ngram models and then using dplyr &amp; data.table to process the search based on the most likely outcome from the gram models.</p>
-<p>Full Code is available here:
-<a href="https://github.com/Nicey80/NLP_CAP/blob/master/app.R">https://github.com/Nicey80/NLP_CAP/blob/master/app.R</a></p>
-<h3 id="useful-resources">Useful Resources</h3>
-<p>When building the app I found Julia Silge &amp; David Robinson's excellent book on tidytext and excellent resource to be able to refer to to work through examples etc. The book can be found here for reference:
-<a href="https://www.tidytextmining.com/">https://www.tidytextmining.com/</a></p>
+    <p><strong>Whether its Chinese in Canterbury or Indian in Iwade - findR has them all</strong></p>
+<p>Powered by Yelp Search I've developed a quick app to allow people to quickly find businesses or places of interest in the UK of their choosing and allowing a filter by rating.</p>
+<h2 id="app-details">App Details</h2>
+<p>Hosted on my own Shiny Server instance with thanks to the excellent instructions from charlesbordet (<a href="https://www.charlesbordet.com/en/guide-shiny-aws/">https://www.charlesbordet.com/en/guide-shiny-aws/</a>) the app uses the functions within the yelpr (<a href="https://github.com/OmaymaS/yelpr">https://github.com/OmaymaS/yelpr</a>) package to integrate a simple search function and leaflet mapping display.</p>
+<p>Full Code can be found at <a href="https://github.com/Nicey80/YelpSearch">https://github.com/Nicey80/YelpSearch</a></p>
 
   </div>
   
 
 <div class="navigation navigation-single">
     
-    <a href="/portfolio/hyde-hyde/" class="navigation-prev">
+    <a href="/portfolio/nlp-next-word-prediction/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">hyde-hyde</span>
+      <span class="navigation-tittle">NLP Next Word Prediction</span>
     </a>
     
-    
-    <a href="/portfolio/2022-12-07-findr/" class="navigation-next">
-      <span class="navigation-tittle">findR - find places of interest in the UK</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
     
 </div>
 

@@ -25,7 +25,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/portfolio/" />
-<meta property="og:updated_time" content="2020-02-16T00:00:00+00:00" /><meta property="og:site_name" content="DataSorcery" />
+<meta property="og:updated_time" content="2022-12-07T00:00:00+00:00" /><meta property="og:site_name" content="DataSorcery" />
 
 
     
@@ -152,7 +152,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2021 htr3n
+  &copy; 2022 htr3n
   
     <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
   
@@ -177,28 +177,22 @@ Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.c
                 <div class="portfolio_content">
                     <div class="item featured text-center">
                         <span class="project__title">
-                            <a href="https://nicey80.shinyapps.io/NLP_App_v2/" target="_blank" rel="noopener noreferrer">NLP Next Word Prediction</a>
+                            <a href="http://shiny.datasorcery.tech/YelpSearch" target="_blank" rel="noopener noreferrer">findR - find places of interest in the UK</a>
                         </span>
                         <p class="project__subtitle-big">
                             <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                            NLP Using tidytext to predict the next word in a sentence
+                            
                             <sup><i class="fa fa-quote-right" aria-hidden="true"></i></sup>
                         </p>
                         <div class="project__featured-image">
-                            <img src="NLP.png"  alt="NLP Next Word Prediction">
+                            <img src="findR.png"  alt="findR - find places of interest in the UK">
                         </div>
                         <div class="project__summary">
-                                <p><strong>NLP Predict the next word.</strong></p>
-<p>As the final part of the Coursera R Programming Course I had to build an App that would predict the next word as a user started to type in words so that after min. 3 words the next word is predicted. Similar to the function of some smartphones.</p>
-<p>The app can be found here:
-<a href="https://nicey80.shinyapps.io/NLP_App_v2/">https://nicey80.shinyapps.io/NLP_App_v2/</a></p>
-<h2 id="the-app">The App</h2>
-<p>The App was created primarily using the tidytext package to ingest the corpus data (tweets, blogs and news articles) and create the relevant ngram models and then using dplyr &amp; data.table to process the search based on the most likely outcome from the gram models.</p>
-<p>Full Code is available here:
-<a href="https://github.com/Nicey80/NLP_CAP/blob/master/app.R">https://github.com/Nicey80/NLP_CAP/blob/master/app.R</a></p>
-<h3 id="useful-resources">Useful Resources</h3>
-<p>When building the app I found Julia Silge &amp; David Robinson's excellent book on tidytext and excellent resource to be able to refer to to work through examples etc. The book can be found here for reference:
-<a href="https://www.tidytextmining.com/">https://www.tidytextmining.com/</a></p>
+                                <p><strong>Whether its Chinese in Canterbury or Indian in Iwade - findR has them all</strong></p>
+<p>Powered by Yelp Search I've developed a quick app to allow people to quickly find businesses or places of interest in the UK of their choosing and allowing a filter by rating.</p>
+<h2 id="app-details">App Details</h2>
+<p>Hosted on my own Shiny Server instance with thanks to the excellent instructions from charlesbordet (<a href="https://www.charlesbordet.com/en/guide-shiny-aws/">https://www.charlesbordet.com/en/guide-shiny-aws/</a>) the app uses the functions within the yelpr (<a href="https://github.com/OmaymaS/yelpr">https://github.com/OmaymaS/yelpr</a>) package to integrate a simple search function and leaflet mapping display.</p>
+<p>Full Code can be found at <a href="https://github.com/Nicey80/YelpSearch">https://github.com/Nicey80/YelpSearch</a></p>
 
                         </div>
                     </div>
