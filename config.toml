@@ -29,8 +29,8 @@ theme = "hyde-hyde"
     showBuiltWith = true
 
     # https://highlightjs.org
-    highlightjs = true
-    highlightjsstyle = "github"
+    #highlightjs = true
+    #highlightjsstyle = "github"
     
     mainSections = ["post"]
     
